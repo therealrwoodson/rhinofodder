@@ -1,17 +1,3 @@
-require.config({
-        paths: {
-            CerosSDK: 'https://sdk.ceros.com/standalone-player-sdk-v5.min'
-        }
-    });
-
-    //console.log('require configured');
-
-    //setup Ceros functions
-    require(['CerosSDK'], function (CerosSDK) {
-        CerosSDK.findExperience()
-            .fail(function(err){console.log('error yo')})
-            .done(function(experience){
-
 //INITIATE CODE AFTER CEROS CALL
 				
 /*
@@ -449,12 +435,3 @@ function $instanceStorage() {
 };
 
 $instanceStorage();
-
-
-//////////////////////////////
-
-
-                // End CODE
-            })
-        ;
-    });
